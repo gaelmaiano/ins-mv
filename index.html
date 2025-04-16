@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Foutoir en Pen Ar Bed</title>
+    <style>
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+}
+
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1600x600') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les images */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #666;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff2a2a;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour le scénario */
+.scenario-element {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    display: none; /* Cacher par défaut */
+}
+
+.scenario-element h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff8800;
+}
+
+.scenario-element p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+#scenario-section h2 {
+    cursor: pointer; /* Indiquer que le titre est cliquable */
+    user-select: none; /* Empêcher la sélection de texte */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#univers">L'univers</a></li>
+                <li><a href="#regles">Règles</a></li>
+                <li><a href="#communaute">Communauté</a></li>
+                <li><a href="#scenario">Scénario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="section">
+        <div class="hero">
+            <h1>In Nomine Satanis / Magna Veritas</h1>
+            <p>Le Bien et le Mal, mais avec un twist. Rejoignez la guerre entre le Ciel et l'Enfer !</p>
+        </div>
+        <div class="image-container">
+            <img src="placeholder_accueil.jpg" alt="Image d'accueil du jeu" />
+        </div>
+    </section>
+
+    <section id="univers" class="section">
+        <h2>L'univers</h2>
+        <p>Bienvenue dans un monde où les anges et les démons se battent pour influencer l'humanité. Le Ciel et l'Enfer ne cessent de se disputer, et vous pouvez être de l'un ou l'autre côté !</p>
+        <div class="image-container">
+             <img src="placeholder_univers.jpg" alt="Image de l'univers du jeu" />
+        </div>
+    </section>
+
+    <section id="regles" class="section">
+        <h2>Les Règles</h2>
+        <p>Découvrez le système de jeu d'INS/MV, basé sur des jets de dés et des décisions stratégiques !</p>
+        <div class="image-container">
+            <img src="placeholder_regles.jpg" alt="Image des règles du jeu" />
+        </div>
+    </section>
+
+    <section id="communaute" class="section">
+        <h2>Communauté</h2>
+        <p>Rejoignez notre forum et échangez avec d'autres joueurs sur vos campagnes, stratégies et personnages !</p>
+         <div class="image-container">
+            <img src="placeholder_communaute.jpg" alt="Image de la communauté du jeu" />
+        </div>
+    </section>
+
+    <section id="scenario" class="section">
+        <h2 id="scenario-title">Votre Scénario : Foutoir en Pen Ar Bed</h2>
+        <div class="scenario-element">
+            <h3>Introduction : Un Réveil Ancestral</h3>
+            <p>
+                Votre groupe d'anges est envoyé en mission dans le Finistère, une région de Bretagne où une série d'événements étranges et violents perturbe l'équilibre naturel et social.  Votre réseau d'informateurs célestes a détecté une source d'énergie inhabituelle, возможно, d'origine surnaturelle, qui semble corrompre la terre et influencer les êtres vivants.
+            </p>
+            <p>
+                 Les signes de ce réveil sont multiples : des actes de vandalisme ciblent les constructions modernes qui empiètent sur les terres ancestrales, avec des explosions mystérieuses visant des maisons et des infrastructures.  Ces actes rappellent étrangement les actions du Front de Libération de la Bretagne (FLB) par le passé, notamment leurs attentats contre des propriétés liées à des entreprises de construction.  De plus, les portes du port de Brest ont été retrouvées badigeonnées de sang, un acte choquant et symbolique qui ajoute à l'atmosphère inquiétante. La faune locale проявляет une агрессивную et une force inhabituelle, avec une multiplication d'animaux sauvages et une augmentation des attaques contre les champs OGM, les serres artificielles et les chasseurs.  La centrale nucléaire des Monts d'Arrêts est envahie par une végétation luxuriante et incontrôlable, отражающая une puissance brute et sauvage.
+            </p>
+        </div>
+        <div class="scenario-element">
+            <h3>Acte 1 : L'Appel de la Terre</h3>
+            <p>
+                Votre mission commence à Brest, où vous rencontrez votre contact local, un ancien séraphin nommé Armel, déchu de son rang mais toujours fidèle à la Lumière.  Armel vous fournit les premiers indices et les pistes à suivre, tout en soulignant l'importance de la discrétion :
+            </p>
+            <ul>
+                <li>
+                    <strong>Les Explosions :</strong> Les explosions sont localisées près de sites mégalithiques et d'anciennes voies.  Des symboles étranges, possibly liés à d'anciennes croyances, ont été trouvés sur les lieux.  La similitude avec les actions du FLB intrigue les enquêteurs.
+                </li>
+                <li>
+                    <strong>Le Port de Brest :</strong> Le badigeonnage de sang sur les portes du port est un acte мрачный et театральный, qui ne correspond pas aux méthodes habituelles du FLB.  Cet acte pourrait signaler l'influence d'une force plus sombre et rituelle.
+                </li>
+                <li>
+                    <strong>Les Animaux :</strong> Les attaques animales sont особо violent et organisées. Les animaux se comportent de manière coordonnée et étrange, comme s'ils étaient guidés par une intelligence supérieure.
+                </li>
+                <li>
+                    <strong>La Centrale :</strong> La végétation qui envahit la centrale est anormaleement rapide et puissante.  Certaines plantes sont inconnues dans la région.
+                </li>
+            </ul>
+        </div>
+        <div class="scenario-element">
+            <h3>Acte 2 : Pistes et Découvertes</h3>
+            <p>
+                Votre enquête vous amène à explorer divers lieux et à rencontrer des personnages clés, tout en essayant de comprendre la nature de la menace :
+            </p>
+            <ul>
+                <li>
+                    <strong>Les Sites Mégalithiques :</strong> L'étude des sites mégalithiques révèle une énergie ancienne et puissante, perturbée par une force corruptrice.
+                </li>
+                <li>
+                    <strong>Les Légendes Locales :</strong> Les légendes locales parlent de dieux anciens et de leur colère face à la profanation de leurs terres.  Certaines mentionnent des rituels sanglants.
+                </li>
+                <li>
+                    <strong>Un Témoin Mystérieux :</strong> Vous rencontrez un vieil homme étrange, gardien d'un savoir ancien, qui met en garde contre le réveil d'une puissance oubliée et mentionne des cultes secrets pratiquant des rites interdits.
+                </li>
+            </ul>
+        </div>
+        <div class="scenario-element">
+            <h3>Acte 3 : Le Cœur du Conflit</h3>
+            <p>
+                La confrontation finale vous oppose à la source de la corruption et vous dévoile la vérité sur les événements :
+            </p>
+            <ul>
+                <li>
+                    <strong>Le Sanctuaire Oublié :</strong> Vous découvrez un sanctuaire caché, возможно un ancien lieu de culte celte, où un rituel грандиозный est en cours pour canaliser une énergie primordiale.  Des traces de sang et des symboles rituels macabres sont présents.
+                </li>
+                <li>
+                    <strong>La Révélation :</strong> Les anges découvrent que les événements sont orchestrés par des cultes modernes qui vénèrent les anciens dieux celtes et cherchent à restaurer leur pouvoir.  Ils comprennent que les actions du FLB ont peut-être inspiré ou servi de couverture à ces cultes, ou que les cultes cherchent à manipuler les tensions existantes.
+                </li>
+                <li>
+                    <strong>Le Choix des Anges :</strong> Les anges doivent contrecarrer les plans des cultistes et affronter la puissance qu'ils tentent de libérer, tout en évitant de perturber davantage l'équilibre naturel de la région.  La nature sanglante des rites pose un dilemme moral important.
+                </li>
+            </ul>
+        </div>
+        <div class="scenario-element">
+            <h3>Conclusion : Le Réveil de la Bretagne</h3>
+            <p>
+                 Les conséquences des actions des anges façonneront l'avenir du Finistère.  Ont-ils réussi à empêcher le rituel ?  Les cultes ont-ils été démantelés ou se sont-ils adaptés ?  L'énergie ancienne a-t-elle été maîtrisée ou continue-t-elle d'influencer la région ?  Le souvenir des actions du FLB plane-t-il toujours sur la région ?  Le symbolisme кровавый des actes оставит-il une cicatrice durable sur la population?
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="placeholder_scenario.jpg" alt="Image du scenario" />
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 INS/MV | Tous droits réservés</p>
+    </footer>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const scenarioTitle = document.getElementById('scenario-title');
+    const scenarioElements = document.querySelectorAll('.scenario-element');
+
+    scenarioTitle.addEventListener('click', function () {
+        const password = prompt("Entrez le code secret pour révéler le scénario:");
+        if (password === "le retour des dieux") {
+            scenarioElements.forEach(element => {
+                element.style.display = 'block';
+            });
+            scenarioTitle.style.cursor = 'default'; // Remove pointer
+            scenarioTitle.onclick = null; // Remove event listener
+        } else {
+            alert("Code incorrect. Accès refusé.");
+        }
+    });
+});
+    </script>
+</body>
+</html>
